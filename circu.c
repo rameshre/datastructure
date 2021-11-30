@@ -81,6 +81,7 @@ void main()
 {
 int choice,item;
 do
+
 {
 printf("\n***Circular Queue***\n");
 printf("1.Insert\n");
