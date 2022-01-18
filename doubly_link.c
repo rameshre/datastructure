@@ -139,7 +139,7 @@ else
 temp=head;
 printf("Enter the location:");
 scanf("%d",&loc);
-for(i=0;i<loc;i++)
+for(i=1;i<loc;i++)
 {
 temp=temp->next;
 if(temp==NULL)
@@ -153,8 +153,8 @@ scanf("%d",&item);
 ptr->data=item;
 ptr->next=temp->next;
 ptr->prev=temp;
-//temp->next=ptr;
-//temp->next->prev=ptr;
+temp->next=ptr;
+temp->next->prev=ptr;
 printf("\nNode inserted\n");
 }
 }
@@ -196,7 +196,7 @@ printf("\nNode deleted\n");
 else
 {
 ptr=head;
-if(ptr->next!=NULL)
+while(ptr->next!=NULL)
 {
 ptr=ptr->next;
 }
