@@ -139,7 +139,7 @@ else
 temp=head;
 printf("Enter the location:");
 scanf("%d",&loc);
-for(i=1;i<loc;i++)
+for(i=1;i<loc-1;i++)
 {
 temp=temp->next;
 if(temp==NULL)
